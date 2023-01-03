@@ -1,5 +1,10 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --mainBgc: rgb(221, 214, 200);
+  --BgcOrange: rgb(240, 155, 63);
+  --mainTextColor: rgb(138, 133, 133);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

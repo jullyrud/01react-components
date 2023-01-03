@@ -2,7 +2,7 @@
     margin-top: 30px;
     width: 350px;
 
-    background-color: rgb(240, 155, 63);
+    background-color: var(--BgcOrange);
     margin-right: auto;
     margin-left: auto;
 
@@ -10,8 +10,8 @@
 }
 
 .description{
-    background-color: rgb(221, 214, 200);
-    width: 100%;
+    background-color: var(--mainBgc);
+    
     padding-bottom: 20px;
 
 }
@@ -37,7 +37,7 @@
     text-align: center;
     margin-bottom: 0;
     margin-top: 15px;
-    color: rgb(138, 133, 133);
+    color: var(--mainTextColor);
 }
 
 
@@ -59,6 +59,6 @@
 }
 .label{
     font-size: 18px;
-    color: rgb(138, 133, 133);
+    color: var(--mainTextColor);
     margin-bottom: 10px;
 }
