@@ -1,11 +1,13 @@
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList'
 
 import user from "../user.json";
 import data from "../data.json";
+import friends from "../friends.json"
 
 
-console.log(data);
+console.log(friends);
 
 export const App = () => {
   return (
@@ -21,8 +23,9 @@ export const App = () => {
           title={data.title}
           stats={data}
         />
-      
-     
+      <FriendList
+        friends={friends}
+      />
     </div>
    
       

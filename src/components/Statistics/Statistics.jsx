@@ -10,11 +10,11 @@ export function Statistics({ title="Upload stats", stats}) {
     <section className={css.statistics}>
         {title && <h2 className={css.title} >{title}</h2>}
         <ul className={css.statList}>
-          {stats.map(st => (
+          {stats.map(({id, label, percentage}) => (
               <li className={css.item}
-                  key={st.id}>
-                <span className={css.label}>{st.label}</span>
-                <span className={css.percentage}>{st.percentage}%</span>
+                  key={id}>
+                <span className={css.label}>{label}</span>
+                <span className={css.percentage}>{percentage}%</span>
               </li>
           )
    
