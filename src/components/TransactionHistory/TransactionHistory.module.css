@@ -1,0 +1,33 @@
+.transactionHistory{
+        margin-top: 30px;
+        width: 350px;
+    
+        /* background-color: var(--BgcOrange); */
+        margin-right: auto;
+        margin-left: auto;
+    
+        box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.tableHead{
+    background-color: var(--BgcOrange);
+    font-size: 20px;
+    
+}
+
+.tableHeadName{
+    font-weight: normal;
+    padding: 10px;
+}
+
+.tableBody{
+    text-align: center;
+}
+
+.tableBody:nth-child(2n){
+    background-color: var(--mainBgc);
+}
+.tableBodyName{
+    text-align: left;
+    text-transform: capitalize;
+}
