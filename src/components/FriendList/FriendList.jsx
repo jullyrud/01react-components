@@ -1,21 +1,20 @@
-import css from './FriendList.module.css'
 import PropTypes from 'prop-types'
-
+import { CardFriendList, CardItem, Cardame, CardAvatar, CardStatus } from './FriendList.styled'
 
 export function FriendList({friends}) {
     return (
 
-    <ul className={css.friendList}>
+    <CardFriendList>
             {friends.map(({id, name, avatar, isOnline}) =>
-                (<li className={css.item}
+                (<CardItem
                     key={id}>
-                <span className={isOnline ? css.online : css.ofline}
-                        ></span>
-                    <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-                    <p className={css.name}>{name}</p>
-                </li>))}
+                    <CardStatus isOnline={isOnline} 
+                    ></CardStatus>
+                    <CardAvatar src={avatar} alt="User avatar" width="48" />
+                    <Cardame>{name}</Cardame>
+                </CardItem>))}
             
-    </ul>
+    </CardFriendList>
 )
     
     

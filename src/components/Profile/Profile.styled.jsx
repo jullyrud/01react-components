@@ -1,4 +1,7 @@
-/* .profile{
+import styled from '@emotion/styled'
+
+
+export const CardProfile = styled.div`
     margin-top: 30px;
     width: 350px;
 
@@ -7,46 +10,46 @@
     margin-left: auto;
 
     box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.25);
-} */
-
-/* .description{
+`
+export const Description = styled.div`
     background-color: var(--mainBgc);
-    padding-bottom: 20px;
-} */
-
-/* .avatar{
+    padding-bottom: 20px;  
+`
+export const Avatar = styled.img`
     width: 60%;
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
     display: block;
     padding-top: 20px;
-} */
-/* 
-.name{
+`
+export const UserName = styled.p`
     font-size: 40px;
     text-align: center;
     margin-bottom: 0;
 
-} */
+`
 
-/* .tag, .location {
+export const UserTag = styled.p`
     font-size: 25px;
     text-align: center;
     margin-bottom: 0;
     margin-top: 15px;
     color: var(--mainTextColor);
-} */
-
-/* 
-.stats{
+`
+export const UserLocation = styled.p`
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 15px;
+    color: var(--mainTextColor);
+`
+export const Stats = styled.ul`
     display: flex;
     margin: 0;
     padding: 0;
-    
-} */
-
-/* .stats_item{
+`
+export const StatsItem = styled.li`
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -54,9 +57,12 @@
     padding-top: 15px;
     padding-bottom: 15px;
     list-style: none;
-} */
-/* .label{
+`
+export const Label = styled.span`
     font-size: 18px;
     color: var(--mainTextColor);
     margin-bottom: 10px;
-} */
+`
+export const Quantity = styled.span`
+ 
+`
